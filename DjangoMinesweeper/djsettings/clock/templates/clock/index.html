@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clock</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'clock/stylesheet.css' %}">
+        <script src="{% static 'clock/scripts.js' %}"></script>
+
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div id="analog">
+                    <img src="{% static 'clock/clockface.jpg' %}">
+                    <div id="hourHand"></div>
+                    <div id="minuteHand"></div>
+                    <div id="secondHand"></div>
+                    <div id="middle"></div>
+                </div>
+            </div>
+
+            <div class="grid-item" id="digital">
+                <div class="timeRow">
+                    <span id="hours"></span>:<span id="minutes"></span><span id="seconds"></span>
+                </div>
+                <hr class="line">
+                <div class="dateRow">
+                    <span id="weekDay"></span><span> | </span><span id="date"></span>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        checkTime();
+        setInterval(checkTime, timeoutVal)
+    </script>
+</html>

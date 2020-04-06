@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+    {% load static %}
+    <link rel="{% static 'mainpage/stylesheet.css' %}" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<i class="fa fa-download"></i>
+<div class="jumbotron">
+    <h1 class="display-4">Projects hub</h1>
+    <p class="lead">This page lists projects I have completed in order to practice the use of basic HTML / CSS /
+        Javascript / Python languages in the Django web framework.</p>
+    <hr class="my-4">
+    <p>The top links allow you to see the projects, whereas the bottom ones let you download the page's directory in
+        order to view the code.</p>
+</div>
+
+<ul class="nav justify-content-center text-center">
+    <li class="nav-item border-right">
+        <a class="nav-link" href="/minesweeper">Minesweeper</a>
+        <a class="nav-link" href="#">Download</a>
+    </li>
+    <li class="nav-item border-right">
+        <a class="nav-link" href="/videoplayer">Video Player</a>
+        <a class="nav-link" href="#">Download</a>
+    </li>
+    <li class="nav-item border-right">
+        <a class="nav-link" href="/gallery">Gallery</a>
+        <a class="nav-link" href="#">Download</a>
+    </li>
+    <li class="nav-item border-right">
+        <a class="nav-link" href="/clock">Clock</a>
+        <a class="nav-link" href="#">Download</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/calculator">Calculator</a>
+        <a class="nav-link" href="#">Download</a>
+    </li>
+</ul>
+</body>

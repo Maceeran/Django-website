@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'gallery/stylesheet.css' %}">
+    <script src="{% static 'gallery/scripts.js' %}"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="grid-container-2-1">
+        <div class="grid-item" id="item-0">
+            <div class="item-title">Rishi Moon</div>
+            <div class="item-control">
+                <span class="glyphicon glyphicon-backward" onclick="prevSlideshowItem0()"></span>
+                <span class="glyphicon glyphicon-pause" onclick="pauseSlideshowItem0()"></span>
+                <span class="glyphicon glyphicon-forward" onclick="slideshowItem0()"></span>
+            </div>
+        </div>
+        <div class="grid-item"  id="item-1">
+            <div class="item-title">Mon Silva</div>
+            <div class="item-control">
+                <span class="glyphicon glyphicon-backward" onclick="prevSlideshowItem1()"></span>
+                <span class="glyphicon glyphicon-pause" onclick="pauseSlideshowItem1()"></span>
+                <span class="glyphicon glyphicon-forward" onclick="slideshowItem1()"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container-1-1">
+        <div class="grid-item"  id="item-2">
+            <div class="item-title">Research</div>
+            <div class="item-control">
+                <span class="glyphicon glyphicon-backward" onclick="prevSlideshowItem2()"></span>
+                <span class="glyphicon glyphicon-pause" onclick="pauseSlideshowItem2()"></span>
+                <span class="glyphicon glyphicon-forward" onclick="slideshowItem2()"></span>
+            </div>
+        </div>
+        <div class="grid-item"  id="item-3">
+            <div class="item-title">Noclyria</div>
+            <div class="item-control">
+                <span class="glyphicon glyphicon-backward" onclick="prevSlideshowItem3()"></span>
+                <span class="glyphicon glyphicon-pause" onclick="pauseSlideshowItem3()"></span>
+                <span class="glyphicon glyphicon-forward" onclick="slideshowItem3()"></span>
+            </div>
+        </div>
+    </div> 
+
+    <div class=grid-container-3-2>
+        <div class="grid-item"  id="item-6">
+            <div class="item-title">Sci-fi Facility</div>
+            <div class="item-control">
+                <span class="glyphicon glyphicon-backward" onclick="prevSlideshowItem6()"></span>
+                <span class="glyphicon glyphicon-pause" onclick="pauseSlideshowItem6()"></span>
+                <span class="glyphicon glyphicon-forward" onclick="slideshowItem6()"></span>
+            </div>
+        </div>
+        <div class="grid-item"  id="item-7">
+            <div class="item-title">Prison</div>
+            <div class="item-control">
+                <span class="glyphicon glyphicon-backward" onclick="prevSlideshowItem7()"></span>
+                <span class="glyphicon glyphicon-pause" onclick="pauseSlideshowItem7()"></span>
+                <span class="glyphicon glyphicon-forward" onclick="slideshowItem7()"></span>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="grid-container-2-3">
+        <div class="grid-item"  id="item-4">
+            <div class="item-title">Dojo</div>
+            <div class="item-control">
+                <span class="glyphicon glyphicon-backward" onclick="prevSlideshowItem4()"></span>
+                <span class="glyphicon glyphicon-pause" onclick="pauseSlideshowItem4()"></span>
+                <span class="glyphicon glyphicon-forward" onclick="slideshowItem4()"></span>
+            </div>
+        </div>
+        <div class="grid-item"  id="item-5">
+            <div class="item-title">Mining Facility</div>
+            <div class="item-control">
+                <span class="glyphicon glyphicon-backward" onclick="prevSlideshowItem5()"></span>
+                <span class="glyphicon glyphicon-pause" onclick="pauseSlideshowItem5()"></span>
+                <span class="glyphicon glyphicon-forward" onclick="slideshowItem5()"></span>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        timeoutID[0] = setTimeout(slideshowItem0, timeoutVal);
+        timeoutID[1] = setTimeout(slideshowItem1, timeoutVal+1000);
+        timeoutID[2] = setTimeout(slideshowItem2, timeoutVal+2000);
+        timeoutID[3] = setTimeout(slideshowItem3, timeoutVal+3000);
+        timeoutID[6] = setTimeout(slideshowItem6, timeoutVal+4000);
+        timeoutID[7] = setTimeout(slideshowItem7, timeoutVal+5000);
+        timeoutID[4] = setTimeout(slideshowItem4, timeoutVal+6000);
+        timeoutID[5] = setTimeout(slideshowItem5, timeoutVal+7000);
+    </script>
+</body>
+</html>

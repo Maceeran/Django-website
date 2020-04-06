@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <form action="minesweeper/game" method="post">
+        {% csrf_token %}
+        <p>Height of the playing field:</p>
+        <input type="text" id="height" name="height" value="15" required  title="Number between 10 and 50">
+        <p>Width of the playing field:</p>
+        <input type="text" id="width" name="width" value="15"required  title="Number between 10 and 50">
+        <p>Mine ratio:</p>
+        <input type="float" id="mineratio" name="mineratio" value="0.2"required pattern="[0].[0-9][0-9]|[0].[0-9]" title="Float between 0 and 1">
+        <br><br>
+        <input type="submit">
+    </form>
+</body>

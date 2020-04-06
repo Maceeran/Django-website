@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+}
+.grid-container-1-1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.grid-container-2-1 {
+    display: grid;
+    grid-template-columns: 66% 33%;
+}
+.grid-container-2-3 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.grid-container-3-2 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.glyphicon {
+    cursor: pointer;
+}
+.grid-item {
+    height:50vh;
+    box-shadow: inset 0 0 25px black;
+    outline: 1px solid black;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-image 0.5s;
+    position:relative;
+}
+.item-title {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5px black;
+    text-align:center;
+    font-size: 24px;
+    color: rgb(200,200,200);
+    position: absolute;
+    top:0;
+    width:100%;
+}
+.item-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5px black;
+    text-align:center;
+    font-size: 24px;
+    color: rgb(200,200,200);
+    position: absolute;
+    bottom:0;
+    width:100%;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s;
+    opacity: 0;
+    user-select:none;
+}
+.grid-item:hover .item-control{
+    visibility: visible;
+    opacity: 1;
+}
+.item-control span{
+    padding: 5px 10px;
+}
+.item-control span:active{
+    opacity: 0.5;
+}
+#item-0 {
+    background-image: url('images/Rishi/0.png');
+}
+#item-1 {
+    background-image: url('images/Monsilva/0.png');
+}
+#item-2 {
+    background-image: url('images/Research/0.png');
+}
+#item-3 {
+    background-image: url('images/Noclyria/0.png');
+}
+#item-4 {
+    background-image: url('images/Dojo/0.png');
+}
+#item-5 {
+    background-image: url('images/Mine/0.png');
+}
+#item-6 {
+    background-image: url('images/Facility/0.png');
+}
+#item-7 {
+    background-image: url('images/Prison/0.png');
+}
+
+@media only screen and (max-width: 1000px){
+    [class*="grid-container-"] {
+        grid-template-columns: 100%;
+    }
+}
